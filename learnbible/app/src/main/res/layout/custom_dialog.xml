@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_12"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dlgTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Titulo"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dlgMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Do you realy want to exit ?"
+        android:textSize="@dimen/size_12"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_48"
+            android:clickable="true"
+            android:text="Cancelar"
+
+            android:textColor="@color/grisClaro"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginLeft="@dimen/dimen_18"
+            android:clickable="true"
+            android:text="Si"
+
+            android:textColor="@color/colorBlanco"
+            android:backgroundTint="@color/colorAzulRio"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            style="@style/Widget.MaterialComponents.Button"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

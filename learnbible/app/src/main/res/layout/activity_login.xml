@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Bienvenido a Bible Learn"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="@dimen/dimen_240"
+        android:layout_height="44dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/anonimo_button"
+        android:layout_width="@dimen/dimen_240"
+        android:layout_height="45dp"
+        android:text="@string/boton_anonimo_text"
+
+        android:textColor="@color/colorAzulRio"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        />
+
+
+</LinearLayout>
+

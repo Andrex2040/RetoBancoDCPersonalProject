@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pbLearn"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_18"
+    android:progress="10"
+    android:max="20"
+    android:paddingStart="@dimen/size_12"
+    android:paddingEnd="@dimen/size_12"
+    android:background="@drawable/progress_drawable"
+    android:layout_marginLeft="@dimen/dimen_24"
+    android:layout_marginRight="@dimen/dimen_24"
+    android:layout_marginTop="@dimen/dimen_12"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />

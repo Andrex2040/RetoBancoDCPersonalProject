@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grisSuperClaro"
+    >
+
+    <View
+        android:id="@+id/vdividerUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_4"
+        android:background="@drawable/shadow_down" />
+
+    <View
+        android:id="@+id/vdividerUp3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_below="@id/vdividerUp"
+        android:background="@drawable/shadow_up"
+        />
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_below="@id/vdividerUp3"
+        android:background="@color/colorBlanco" />
+
+    <RelativeLayout
+        android:id="@+id/rlItemGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div1"
+        android:background="@color/colorBlanco"
+        >
+        <RelativeLayout
+            android:id="@+id/rlItem"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/rlItemInterno"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                >
+
+            <ImageView
+                android:id="@+id/ivCircleHistoria"
+                android:layout_width="@dimen/dimen_48"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/img_book"/>
+
+            <TextView
+                android:id="@+id/tvLibro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_12"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="Deuteronomio"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorNegro"
+                android:textSize="@dimen/size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPasajeSimple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLibro"
+                android:layout_marginStart="@dimen/dimen_18"
+                android:layout_marginTop="@dimen/dimen_1"
+                android:textSize="@dimen/size_12"
+                android:text="Pasaje"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvHistoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/size_8"
+            android:layout_toEndOf="@id/rlItem"
+            android:text="Historia"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/size_14" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_below="@id/rlItemGeneral"
+        android:background="@color/colorBlanco" />
+
+    <View
+        android:id="@+id/vdivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_below="@id/div2"
+        android:background="?android:attr/listDivider" />
+    <View
+        android:id="@+id/vdivider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/vdivider"
+        android:background="@color/colorBlanco" />
+
+    <ImageView
+        android:id="@+id/ivVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="103dp"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_112"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_vertical_disabled"
+        />
+
+    <ImageView
+        android:id="@+id/ivCaminoHistoria"
+        android:layout_width="@dimen/dimen_36"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginStart="@dimen/dimen_100"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/img_process" />
+
+
+    <ProgressBar
+        android:id="@+id/pbLearnVersiculo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/dimen_72"
+        android:layout_height="@dimen/dimen_72"
+        android:layout_marginTop="@dimen/dimen_42"
+        android:layout_marginStart="82dp"
+        android:max="5"
+        android:progress="1"
+        android:progressTint="@color/colorVerde"
+        android:progressDrawable="@drawable/progress_circular"
+        android:secondaryProgress="100" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_66"
+        android:layout_marginStart="106dp"
+
+        android:background="@drawable/texto_circle"
+        android:gravity="center"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="10.0"
+        android:text="2"
+        android:textColor="@color/colorBlanco"
+        android:textSize="@dimen/size_12" />
+
+    <TextView
+        android:id="@+id/tvNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="106dp"
+        android:text="Nivel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/size_10" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_90"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_82">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civFriend3"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_launcher" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civFriend2"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_launcher" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civFriend1"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</RelativeLayout>

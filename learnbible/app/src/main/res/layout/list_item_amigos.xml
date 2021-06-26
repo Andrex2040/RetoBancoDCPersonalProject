@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_90" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ciProfile"
+        android:layout_width="@dimen/dimen_48"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvAmigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_toEndOf="@+id/ciProfile"
+        android:text="Amigos"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/tvXp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAmigos"
+        android:layout_marginStart="@dimen/dimen_18"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_toEndOf="@+id/ciProfile"
+        android:text="XP"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvAmigos"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_toEndOf="@+id/tvXp"
+        android:tint="@color/colorNaranja"
+        android:src="@drawable/icon_xp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_18"
+        android:text="a 100 km"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <Button
+        android:id="@+id/btCancelarAmigo"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvKm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_1"
+        android:layout_marginEnd="@dimen/dimen_140"
+        android:layout_marginRight="@dimen/dimen_18"
+        android:visibility="invisible"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/btAgregarAmigo"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvKm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_1"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_18"
+        android:text="Agregar" />
+
+
+</RelativeLayout>

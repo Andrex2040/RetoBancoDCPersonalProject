@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.learnbible">
+
+    <!-- Grant the network access permission -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Grant the location access permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_id"/>
+
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".MainVersiculoActivity" tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".activities.home.HomeVersiculoActivity" android:label="Home" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.home.RecordarVersiculoActivity" android:label="Recordar" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.home.AmigosActivity" android:label="Amigos" tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".activities.PerfilActivity" android:label="Perfil" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.BuscaTuAmigoActivity" android:label="Busca a tu Amigo" tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".activities.core.VersiculoLearnVozVersiculoActivity" android:label="Versiculo" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.core.VersiculoLearnTextVersiculoActivity" android:label="Versiculo" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.core.VersiculoLearnPasajeVersiculoActivity" android:label="Versiculo" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.core.VersiculoLearnFinalVersiculoActivity" android:label="Versiculo" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.core.VersiculoLearnVersiculoActivity" android:label="Versiculo" tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activities.core.RecordarLearnVozVersiculoActivity" android:label="Recordar" tools:ignore="LockedOrientationActivity" />
+
+
+
+        <service
+            android:name="com.google.firebase.quickstart.fcm.kotlin.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

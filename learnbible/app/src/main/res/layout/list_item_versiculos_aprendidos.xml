@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_90" >
+
+    <TextView
+        android:id="@+id/tvVersiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:text="Versiculo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <RatingBar
+        android:id="@+id/rbStar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:numStars="5"
+        android:rating="3"
+        android:isIndicator="true"
+        android:progressTint="@color/colorAmarillo"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_12" />
+
+
+</RelativeLayout>

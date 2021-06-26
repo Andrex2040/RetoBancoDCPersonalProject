@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>porcentaje_ok_levenshtein_versiculo</key>
+        <value>0.1</value>
+    </entry>
+    <entry>
+        <key>porcentaje_ok_levenshtein_recordar</key>
+        <value>0.05</value>
+    </entry>
+    <entry>
+        <key>default_latitud</key>
+        <value>4.6173634</value>
+    </entry>
+    <entry>
+        <key>default_longitud</key>
+        <value>-74.115165</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

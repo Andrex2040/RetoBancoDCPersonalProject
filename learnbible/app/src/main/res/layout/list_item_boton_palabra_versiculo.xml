@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btPalabra"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dimen_3"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:text="La"
+
+    android:textColor="@color/colorAzulRio"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    />

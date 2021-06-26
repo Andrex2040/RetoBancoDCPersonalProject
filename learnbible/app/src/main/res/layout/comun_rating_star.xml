@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RatingBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rbStar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:numStars="5"
+    android:stepSize="0.1"
+    android:rating="3"
+    android:isIndicator="true"
+    android:progressTint="@color/colorAmarillo"
+    android:layout_marginLeft="@dimen/dimen_24"
+    android:layout_marginRight="@dimen/dimen_24"
+    android:layout_marginTop="@dimen/dimen_12"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+

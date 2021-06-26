@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="bindingEnabled" value="true" />
+    <option name="fileExclusions">
+      <list>
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/asynclayoutinflater/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/r/androidx/constraintlayout/widget/R.java" />
+        <option value="FILE:app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" />
+        <option value="FILE:app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" />
+        <option value="FILE:app/build/generated/source/buildConfig/debug/com/learnbible/BuildConfig.java" />
+        <option value="FILE:app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" />
+      </list>
+    </option>
+    <option name="projectKey" value="biblegames1_learnbible" />
+    <option name="serverId" value="SonarCloud" />
+  </component>
+</project>
